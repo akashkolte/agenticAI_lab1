@@ -1,0 +1,61 @@
+======================================================================
+QUESTION: Tell me something about the University at Buffalo.
+======================================================================
+
+TRACE
+----------------------------------------------------------------------
+[Step 1] Model output:
+    {"tool": "lookup", "args": {"query": "University at Buffalo"}}
+
+[Step 1] Action: lookup({"query": "University at Buffalo"})
+
+[Step 1] Observation: The University at Buffalo (UB) is a public research university in Buffalo, New York, and the largest campus in the SUNY system.
+
+[Step 2] Model output:
+    {"final_answer": "The University at Buffalo (UB) is a public research university in Buffalo, New York, and the largest campus in the SUNY system."}
+
+[Step 2] Final answer: The University at Buffalo (UB) is a public research university in Buffalo, New York, and the largest campus in the SUNY system.
+
+----------------------------------------------------------------------
+RESULT
+----------------------------------------------------------------------
+success: True
+answer:  The University at Buffalo (UB) is a public research university in Buffalo, New York, and the largest campus in the SUNY system.
+
+RAW RESULT (JSON)
+----------------------------------------------------------------------
+{
+  "success": true,
+  "answer": "The University at Buffalo (UB) is a public research university in Buffalo, New York, and the largest campus in the SUNY system.",
+  "trace": [
+    {
+      "step": 0,
+      "type": "model_reply",
+      "content": "{\"tool\": \"lookup\", \"args\": {\"query\": \"University at Buffalo\"}}"
+    },
+    {
+      "step": 0,
+      "type": "tool_call",
+      "tool": "lookup",
+      "args": {
+        "query": "University at Buffalo"
+        
+      }
+    },
+    {
+      "step": 0,
+      "type": "observation",
+      "content": "The University at Buffalo (UB) is a public research university in Buffalo, New York, and the largest campus in the SUNY system."
+    },
+    {
+      "step": 1,
+      "type": "model_reply",
+      "content": "{\"final_answer\": \"The University at Buffalo (UB) is a public research university in Buffalo, New York, and the largest campus in the SUNY system.\"}"
+    },
+    {
+      "step": 1,
+      "type": "final",
+      "content": "The University at Buffalo (UB) is a public research university in Buffalo, New York, and the largest campus in the SUNY system."
+    }
+  ]
+}
