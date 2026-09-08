@@ -1,0 +1,11 @@
+CSE 410 / 510 - Introduction to Agentic Engineering
+University at Buffalo, Fall 2026
+
+Instructors: Dr. Joaquin Carbonara and Dr. David Doermann
+
+Lab 1: A Minimal Tool-Using Agent.
+Assigned in Week 2, due in Week 4.
+
+In this lab students build a small tool-using agent from scratch in Python.
+The agent receives a natural-language question, decides which tool to use,
+calls that tool, and returns an answer grounded in the tool's output.
